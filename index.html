@@ -24,7 +24,7 @@
                   </div>
                   <!-- form section -->
                   <input
-                    id="user-number"
+                    id="user-letter"
                     type="text"
                     class="form-control"
                     aria-label="Sizing example input"
@@ -57,7 +57,17 @@
 
           <script>
             function clickMe() {
-              console.log("Hello");
+              const inputEl = document.getElementById("user-letter");
+              console.log(inputEl);
+
+        const userInput = inputEl.value;
+        console.log(userInput);
+
+        if (userInput === "f") {
+          console.log("winner");
+        }else {
+          console.log("loser", "f", userInput);
+        }
             }
           </script>
 
